@@ -41,7 +41,7 @@ export default function HeroSection2() {
 		<div className='flex flex-col justify-center py-6 shadow-xl'>
 			<p className='text-xl font-semibold text-center my-4'>What Are The <span className='text-blue-500'>Referral Benefits?</span></p>
 
-			<div className='flex flex-row justify-center items-start space-x-4'>
+			<div className='flex flex-col lg:flex-row justify-center items-start space-x-4'>
 
 				<div className='shadow-xl'>
 					<TableContainer>

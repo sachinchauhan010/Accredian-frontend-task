@@ -10,7 +10,7 @@ function HeroSection1() {
 		<div className='my-6 p-4 shadow-xl bg-blue-50 flex flex-col justify-center relative h-[100vh]'>
 			<p className='text-xl font-semibold text-center'>How Do I <span className='text-blue-500'>Refer</span></p>
 			<img src={HeroImg} alt="" className='' />
-			<div className='flex justify-center items-center space-x-48 absolute left-60'>
+			<div className='hidden lg:flex justify-center items-center space-x-48 absolute left-60'>
 				<div className='w-40 flex flex-col items-center'>
 					<img src={ContactImg} alt="" className='w-16 mb-3' />
 					<p className='text-sm mt-3 text-center'>Submit referrals easily via our website&apos;s referral section.</p>
@@ -25,7 +25,7 @@ function HeroSection1() {
 				</div>
 			</div>
 			<div className='mx-auto'>
-			<DetailsFormDialog />
+				<DetailsFormDialog />
 			</div>
 		</div>
 	)
