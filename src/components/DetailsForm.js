@@ -69,7 +69,7 @@ export default function DetailsFormDialog() {
 		}
 
 		try {
-			const response = await fetch(process.env.API_URI+"refer",
+			const response = await fetch(process.env.API_URI + '/refer',
 				{
 					method: 'POST',
 					headers: {
@@ -78,6 +78,7 @@ export default function DetailsFormDialog() {
 					body: JSON.stringify(referrerData),
 				}
 			)
+			console.log(process.env.API_URI + '/refer')
 			const apiresponse = await response.json();
 			if(apiresponse){
 				console.log("Refer email send")
