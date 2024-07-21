@@ -93,22 +93,9 @@ export default function DetailsFormDialog() {
 
 	return (
 		<React.Fragment>
-			<Button
-				onClick={handleClickOpen}
-				sx={{
-					backgroundColor: '#1E3A8A',
-					color: '#FFFFFF',
-					paddingY: '0.5rem',
-					paddingX: '1.5rem',
-					marginTop: '1.5rem',
-					borderRadius: '0.375rem',
-					'&:hover': {
-						backgroundColor: '#1D4ED8',
-					},
-				}}
-			>
+			<button onClick={handleClickOpen} className="bg-blue-600 text-white py-2 px-6 mt-6 rounded-lg hover:bg-blue-700 w-fit">
 				Refer Now
-			</Button>
+			</button>
 			<Dialog
 				open={open}
 				onClose={handleClose}
