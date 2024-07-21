@@ -17,7 +17,7 @@ export default function DetailsFormDialog() {
 		referrerEmail: '',
 		referrerPhoneNo: '',
 		referrerRelation: 'friend',
-		refertoemail:''
+		refertoemail: ''
 	});
 
 	const handleClickOpen = () => {
@@ -79,13 +79,15 @@ export default function DetailsFormDialog() {
 				}
 			)
 			const apiresponse = await response.json();
-			if (apiresponse.success) {
-				toast.success(apiresponse.message)
-			} else {
-
+			if(apiresponse){
+				console.log("Refer email send")
+				toast.success("Refer email send")
+			}else{
+				console.log("Error in sending referal")
 			}
-		} catch (error) {
 
+		} catch (error) {
+			console.log(error)
 		}
 		handleClose();
 		toast.success('Referal Details submitted')
@@ -176,7 +178,7 @@ export default function DetailsFormDialog() {
 						value={referrerData.refertoemail}
 						onChange={handleReferrerChange}
 					/>
-					
+
 				</DialogContent>
 				<DialogActions>
 					<Button onClick={handleClose}>Cancel</Button>
