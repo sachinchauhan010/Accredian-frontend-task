@@ -69,7 +69,7 @@ export default function DetailsFormDialog() {
 		}
 
 		try {
-			const response = await fetch(`${process.env.API_URI}+refer`,
+			const response = await fetch(process.env.API_URI+"refer",
 				{
 					method: 'POST',
 					headers: {
